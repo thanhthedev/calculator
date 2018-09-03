@@ -12,4 +12,18 @@ class CalculatorTest < Test::Unit::TestCase
     assert_equal(5, total)
   end
 
+  def test_multiply
+    total = multiply(3, 5)
+    assert_equal(15, total)
+  end
+
+  def test_divide
+    total = divide(20, 10)
+    assert_equal(2, total)
+  end
+
+  def test_square
+    total = square(2, 3)
+    assert_equal(8, total)
+  end
 end
